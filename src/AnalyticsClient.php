@@ -11,12 +11,8 @@ class AnalyticsClient
 {
     protected int $cacheLifeTimeInMinutes = 0;
 
-    public function __construct(
-        protected Google_Service_Analytics $service,
-        protected Repository $cache,
-    ) {
-        //
-    }
+    protected Google_Service_Analytics $service;
+    protected Repository $cache;
 
     public function setCacheLifeTimeInMinutes(int $cacheLifeTimeInMinutes): self
     {
@@ -36,7 +32,7 @@ class AnalyticsClient
      *
      * @return Google_Service_Analytics_GaData|array|null
      */
-    public function performQuery(string $viewId, DateTimeInterface $startDate, DateTimeInterface $endDate, string $metrics, array $others = []): Google_Service_Analytics_GaData | array | null
+    public function performQuery(string $viewId, DateTimeInterface $startDate, DateTimeInterface $endDate, string $metrics, array $others = [])
     {
         $cacheName = $this->determineCacheName(func_get_args());
 
@@ -75,7 +71,7 @@ class AnalyticsClient
         });
     }
 
-    public function getAnalyticsService(): Google_Service_Analytics
+    public function getAnalyticsService()
     {
         return $this->service;
     }

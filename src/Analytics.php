@@ -11,11 +11,14 @@ use Illuminate\Support\Traits\Macroable;
 class Analytics
 {
     use Macroable;
-
+    protected AnalyticsClient $client;
+    protected string $viewId;
     public function __construct(
-        protected AnalyticsClient $client,
-        protected string $viewId,
+        AnalyticsClient $client,
+        string $viewId
     ) {
+        $this->client = $client;
+        $this->viewId = $viewId;
     }
 
     public function setViewId(string $viewId): self
@@ -156,7 +159,7 @@ class Analytics
      *
      * @return Google_Service_Analytics_GaData|array|null
      */
-    public function performQuery(Period $period, string $metrics, array $others = []): Google_Service_Analytics_GaData | array | null
+    public function performQuery(Period $period, string $metrics, array $others = [])
     {
         return $this->client->performQuery(
             $this->viewId,
@@ -171,7 +174,7 @@ class Analytics
      * Get the underlying Google_Service_Analytics object. You can use this
      * to basically call anything on the Google Analytics API.
      */
-    public function getAnalyticsService(): Google_Service_Analytics
+    public function getAnalyticsService()
     {
         return $this->client->getAnalyticsService();
     }
