@@ -13,6 +13,11 @@ class AnalyticsClient
 
     protected Google_Service_Analytics $service;
     protected Repository $cache;
+    public function __construct(Google_Service_Analytics $service, Repository $cache)
+    {
+        $this->service = $service;
+        $this->cache = $cache;
+    }
 
     public function setCacheLifeTimeInMinutes(int $cacheLifeTimeInMinutes): self
     {

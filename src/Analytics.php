@@ -13,10 +13,8 @@ class Analytics
     use Macroable;
     protected AnalyticsClient $client;
     protected string $viewId;
-    public function __construct(
-        AnalyticsClient $client,
-        string $viewId
-    ) {
+    public function __construct(AnalyticsClient $client, string $viewId)
+    {
         $this->client = $client;
         $this->viewId = $viewId;
     }
