@@ -3,8 +3,8 @@
 namespace JfelixStudio\Analytics;
 
 use JfelixStudio\Analytics\Exceptions\InvalidConfiguration;
-use JfelixStudio\LaravelPackageTools\Package;
-use JfelixStudio\LaravelPackageTools\PackageServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class AnalyticsServiceProvider extends PackageServiceProvider
 {
