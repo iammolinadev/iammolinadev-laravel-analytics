@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Analytics;
+namespace JfelixStudio\Analytics;
 
 use Carbon\Carbon;
 use Google_Service_Analytics;

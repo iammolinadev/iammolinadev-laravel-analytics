@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Analytics;
+namespace JfelixStudio\Analytics;
 
 use DateTimeInterface;
 use Google_Service_Analytics;
@@ -85,6 +85,6 @@ class AnalyticsClient
      */
     protected function determineCacheName(array $properties): string
     {
-        return 'spatie.laravel-analytics.'.md5(serialize($properties));
+        return 'JfelixStudio.laravel-analytics.' . md5(serialize($properties));
     }
 }

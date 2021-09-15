@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Analytics;
+namespace JfelixStudio\Analytics;
 
-use Spatie\Analytics\Exceptions\InvalidConfiguration;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use JfelixStudio\Analytics\Exceptions\InvalidConfiguration;
+use JfelixStudio\LaravelPackageTools\Package;
+use JfelixStudio\LaravelPackageTools\PackageServiceProvider;
 
 class AnalyticsServiceProvider extends PackageServiceProvider
 {
@@ -46,7 +46,7 @@ class AnalyticsServiceProvider extends PackageServiceProvider
             return;
         }
 
-        if (! file_exists($analyticsConfig['service_account_credentials_json'])) {
+        if (!file_exists($analyticsConfig['service_account_credentials_json'])) {
             throw InvalidConfiguration::credentialsJsonDoesNotExist($analyticsConfig['service_account_credentials_json']);
         }
     }

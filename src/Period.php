@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Analytics;
+namespace JfelixStudio\Analytics;
 
 use Carbon\Carbon;
 use DateTimeInterface;
-use Spatie\Analytics\Exceptions\InvalidPeriod;
+use JfelixStudio\Analytics\Exceptions\InvalidPeriod;
 
 class Period
 {

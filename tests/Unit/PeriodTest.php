@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Analytics\Tests;
+namespace JfelixStudio\Analytics\Tests;
 
 use Carbon\Carbon;
 use DateTimeImmutable;
 use PHPUnit\Framework\TestCase;
-use Spatie\Analytics\Exceptions\InvalidPeriod;
-use Spatie\Analytics\Period;
+use JfelixStudio\Analytics\Exceptions\InvalidPeriod;
+use JfelixStudio\Analytics\Period;
 
 class PeriodTest extends TestCase
 {

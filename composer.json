@@ -1,15 +1,15 @@
 {
-    "name": "spatie/laravel-analytics",
-    "description": "A Laravel package to retrieve Google Analytics data.",
+    "name": "jfelixstudio/lumen-analytics",
+    "description": "A lumen package to retrieve Google Analytics data.",
     "keywords": [
-        "spatie",
+        "JfelixStudio",
         "google",
         "analytics",
         "retrieve",
         "reports",
-        "laravel"
+        "laravel",
+        "lumen"
     ],
-    "homepage": "https://github.com/spatie/laravel-analytics",
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +22,8 @@
     "require": {
         "php": "^8.0",
         "google/apiclient": "^2.0|^2.7",
-        "laravel/framework": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0",
+        "illuminate/contracts": "^7.0|^8.0",
         "nesbot/carbon": "^2.0",
         "spatie/laravel-package-tools": "^1.6",
         "symfony/cache": "^4.3|^5.0"
@@ -35,22 +36,22 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Analytics\\": "src"
+            "JfelixStudio\\Analytics\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Analytics\\AnalyticsServiceProvider"
+                "JfelixStudio\\Analytics\\AnalyticsServiceProvider"
             ],
             "aliases": {
-                "Analytics": "Spatie\\Analytics\\AnalyticsFacade"
+                "Analytics": "JfelixStudio\\Analytics\\AnalyticsFacade"
             }
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Analytics\\Tests\\": "tests"
+            "JfelixStudio\\Analytics\\Tests\\": "tests"
         }
     },
     "config": {

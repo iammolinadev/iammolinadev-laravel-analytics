@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Analytics\Tests\Integration;
+namespace JfelixStudio\Analytics\Tests\Integration;
 
 use Analytics;
 use Carbon\Carbon;
-use Spatie\Analytics\Exceptions\InvalidConfiguration;
+use JfelixStudio\Analytics\Exceptions\InvalidConfiguration;
 use Storage;
 
 class AnalyticsServiceProviderTest extends TestCase
@@ -38,7 +38,7 @@ class AnalyticsServiceProviderTest extends TestCase
 
         $analytics = $this->app['laravel-analytics'];
 
-        $this->assertInstanceOf(\Spatie\Analytics\Analytics::class, $analytics);
+        $this->assertInstanceOf(\JfelixStudio\Analytics\Analytics::class, $analytics);
     }
 
     /** @test */
@@ -62,7 +62,7 @@ class AnalyticsServiceProviderTest extends TestCase
 
         $analytics = $this->app['laravel-analytics'];
 
-        $this->assertInstanceOf(\Spatie\Analytics\Analytics::class, $analytics);
+        $this->assertInstanceOf(\JfelixStudio\Analytics\Analytics::class, $analytics);
     }
 
     protected function get_credentials()
