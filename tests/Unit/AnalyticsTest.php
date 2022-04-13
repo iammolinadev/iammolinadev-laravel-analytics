@@ -4,11 +4,11 @@ namespace JfelixStudio\Analytics\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
-use Mockery;
-use PHPUnit\Framework\TestCase;
 use JfelixStudio\Analytics\Analytics;
 use JfelixStudio\Analytics\AnalyticsClient;
 use JfelixStudio\Analytics\Period;
+use Mockery;
+use PHPUnit\Framework\TestCase;
 
 class AnalyticsTest extends TestCase
 {
