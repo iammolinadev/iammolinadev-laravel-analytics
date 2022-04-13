@@ -1,8 +1,8 @@
 {
-    "name": "jfelixstudio/lumen-analytics",
+    "name": "iammolinadev-laravel-analytics",
     "description": "A lumen package to retrieve Google Analytics data.",
     "keywords": [
-        "JfelixStudio",
+        "iammolinadev",
         "google",
         "analytics",
         "retrieve",
@@ -22,8 +22,8 @@
     "require": {
         "php": "^7.3|^8.0",
         "google/apiclient": "^2.0|^2.7",
-        "illuminate/support": "^7.0|^8.0",
-        "illuminate/contracts": "^7.0|^8.0",
+        "illuminate/support": "^5.0|^6.0|^7.0|^8.0|^9.0",
+        "illuminate/contracts": "^7.0|^8.0|^9.0",
         "nesbot/carbon": "^2.0",
         "spatie/laravel-package-tools": "^1.6",
         "symfony/cache": "^4.3|^5.0"
@@ -36,22 +36,22 @@
     },
     "autoload": {
         "psr-4": {
-            "JfelixStudio\\Analytics\\": "src"
+            "IammolinaDev\\Analytics\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "JfelixStudio\\Analytics\\AnalyticsServiceProvider"
+                "IammolinaDev\\Analytics\\AnalyticsServiceProvider"
             ],
             "aliases": {
-                "Analytics": "JfelixStudio\\Analytics\\AnalyticsFacade"
+                "Analytics": "IammolinaDev\\Analytics\\AnalyticsFacade"
             }
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JfelixStudio\\Analytics\\Tests\\": "tests"
+            "IammolinaDev\\Analytics\\Tests\\": "tests"
         }
     },
     "config": {
