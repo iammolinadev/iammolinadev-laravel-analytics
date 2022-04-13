@@ -1,6 +1,6 @@
 {
     "name": "iammolinadev/lumen-analytics",
-    "description": "A lumen package to retrieve Google Analytics data.",
+    "description": "A laravel package to retrieve Google Analytics data.",
     "keywords": [
         "iammolinadev",
         "google",
