@@ -4,9 +4,9 @@ namespace JfelixStudio\Analytics\Tests;
 
 use Carbon\Carbon;
 use DateTimeImmutable;
-use PHPUnit\Framework\TestCase;
 use JfelixStudio\Analytics\Exceptions\InvalidPeriod;
 use JfelixStudio\Analytics\Period;
+use PHPUnit\Framework\TestCase;
 
 class PeriodTest extends TestCase
 {
